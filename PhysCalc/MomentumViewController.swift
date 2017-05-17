@@ -11,7 +11,7 @@ import Material
 
 class MomentumViewController: UIViewController {
     var gists = [[String: AnyObject]]()
-    
+    //hi
     fileprivate var mi1: TextField!
     fileprivate var vi1: TextField!
     fileprivate var mi2: TextField!
@@ -20,6 +20,7 @@ class MomentumViewController: UIViewController {
     fileprivate var vf1: TextField!
     fileprivate var mf2: TextField!
     fileprivate var vf2: TextField!
+    var nfjf = 1
     
     class func instantiateFromStoryboard() -> MomentumViewController {
         let storyboard = UIStoryboard(name: "MenuViewController", bundle: nil)
