@@ -6,11 +6,13 @@ PODS:
     - Material/Core (= 2.6.3)
   - Material/Core (2.6.3)
   - PagingMenuController (2.2.0)
+  - SCLAlertView (0.7.0)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - Material (~> 2.0)
   - PagingMenuController
+  - SCLAlertView
 
 EXTERNAL SOURCES:
   ChameleonFramework:
@@ -25,7 +27,8 @@ SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
   PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
 
-PODFILE CHECKSUM: 60b7d34aca43a33b4b13f220f195625ab8bf02cb
+PODFILE CHECKSUM: 9276fbcef6bd0ef5a3a4f87435a99edb25c9a049
 
 COCOAPODS: 1.1.0.rc.2

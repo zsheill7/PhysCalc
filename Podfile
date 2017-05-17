@@ -7,6 +7,7 @@ target 'PagingMenuControllerDemo' do
   pod "PagingMenuController"
   pod 'Material', '~> 2.0'
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+  pod 'SCLAlertView'
 end
 
 

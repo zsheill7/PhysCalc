@@ -9,11 +9,18 @@
 import UIKit
 import Material
 import ChameleonFramework
+import SCLAlertView
 
 let constant: CGFloat = 32
 
 
 class KinematicsViewController: UIViewController {
+    
+    
+    func displayAlert(title: String, message: String) {
+        SCLAlertView().showInfo(title, subTitle: message)
+        
+    }
     
     fileprivate var textField: TextField!
     fileprivate var velocityField: TextField!
@@ -137,13 +144,19 @@ extension KinematicsViewController {
         
         if firstEqCount >= 3 {
             firstEqWorks = true
-           // performFirstEquation(
+            self.performFirstEquation(a: kinematicsDict["Acceleration"], t: kinematicsDict["Time"], vxo: kinematicsDict["Initial Velocity"], vx: kinematicsDict["Final Velocity"])
         }
         if secondEqCount >= 4 {
             secondEqWorks = true
+            self.performSecondEquation(a: kinematicsDict["Acceleration"], t: kinematicsDict["Time"], vxo: kinematicsDict["Initial Velocity"], xo: kinematicsDict["Initial Position"], x: kinematicsDict["Final Position"])
         }
         if thirdEqCount >= 4 {
             thirdEqWorks = true
+            self.performThirdEquation(a: kinematicsDict["Acceleration"], vxo: kinematicsDict["Initial Velocity"], vx: kinematicsDict["Final Velocity"], xo: kinematicsDict["Initial Position"], x: kinematicsDict["Final Position"])
+        }
+        
+        if firstEqCount < 3 || secondEqCount < 4 || thirdEqCount < 4 {
+            self.displayAlert(title: "Unable to Calculate", message: "Please enter more variables")
         }
         
         
@@ -178,8 +191,19 @@ extension KinematicsViewController {
         }
     }
     
-    func performThirdEquation() {
-        
+    func performThirdEquation(a: Double, vxo: Double, vx: Double, xo: Double, x: Double) {
+        if a == nilDouble {
+            kinematicsDict["Acceleration"] = (pow(vx,2) - pow(vxo,2)) / (2*(x - xo))
+        } else if t == nilDouble {
+            //MARK: FIGURE THIS OUT
+            kinematicsDict["Final Velocity"] = sqrt(pow(vxo,2) + 2*a*(x - xo))
+        } else if vxo == nilDouble {
+            kinematicsDict["Initial Velocity"] = sqrt(pow(vxo,2) - 2*a*(x - xo))
+        } else if xo == nilDouble {
+            kinematicsDict["Initial Position"] = -((pow(vx,2) - pow(vxo,2)) / (2*a) - x)
+        } else if x == nilDouble {
+            kinematicsDict["Final Position"] = (((pow(vx,2) - pow(vxo,2)) / (2*a)) + x)
+        }
     }
     
     /*func performSecondEquation(a: Double, t: Double, vxo: Double, xo: Double, x: Double) {

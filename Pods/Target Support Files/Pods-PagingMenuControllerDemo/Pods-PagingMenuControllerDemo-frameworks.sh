@@ -87,9 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ChameleonFramework/ChameleonFramework.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Material/Material.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PagingMenuController/PagingMenuController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SCLAlertView/SCLAlertView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ChameleonFramework/ChameleonFramework.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Material/Material.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PagingMenuController/PagingMenuController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SCLAlertView/SCLAlertView.framework"
 fi
