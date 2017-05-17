@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>PagingMenuControllerDemo2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>PhysCalc.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>707C60DA1AFF822100BDAB0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>707C60EF1AFF822200BDAB0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC7BA3F61B524BB4007FB8A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC7BA40A1B524BB4007FB8A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC96215C1C5B4F1700DA6EE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
